@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_backgroundcolorOfApp">
+
+    <com.google.android.material.tabs.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/topRatedFragment_tablayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/primaryColorOfApp"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        android:background="@color/color_backgroundcolorOfApp"
+        app:tabSelectedTextColor="@color/primaryColorOfApp"
+        app:tabTextAppearance="@style/CustomTextAppearanceTab"
+        app:tabTextColor="#BEBEBE"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/topRatedFragment_viewPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topRatedFragment_tablayoutId"
+        android:background="@drawable/custom_background" />
+
+</RelativeLayout>

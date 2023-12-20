@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@color/color_backgroundcolorOfApp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/SelectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/homeFragment_topMSG_carditem_pictureId"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/attack_poster" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_effects" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#BEBEBE"
+            android:id="@+id/homeFragment_topMSG_carditem_typeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/autoradiographic"
+            android:gravity="center"
+            android:text="Movie"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/topmsg_card_item_circle_icon" />
+
+        <TextView
+            android:textColor="#BEBEBE"
+            android:id="@+id/homeFragment_topMSG_carditem_yearId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/autoradiographic"
+            android:gravity="center"
+            android:text="1999"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/topmsg_card_item_circle_icon" />
+
+        <ImageView
+            android:src="@drawable/imdb_icon"
+            android:layout_marginRight="8dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/homeFragment_topMSG_carditem_imdbRatingId"
+            android:text="9.3"
+            android:textColor="#BEBEBE"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/autoradiographic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

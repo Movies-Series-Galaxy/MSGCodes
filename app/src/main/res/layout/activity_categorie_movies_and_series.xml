@@ -1,0 +1,80 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/custom_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MVCOfCategories.CategorieMoviesAndSeries" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/categorieMoviesAndSeriesActivity_collapsingtoolbarId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#121212"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            >
+
+            <ImageView
+                android:id="@+id/categorieMoviesAndSeriesActivity_categorieBackgroundId"
+                android:src="@drawable/netflix"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <View
+                android:background="@drawable/shadow_effects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:textColor="#FFFFFF"
+               android:gravity="center"
+               android:fontFamily="@font/autoradiographic"
+               android:textSize="32dp"
+               android:text="ajhfassdgsdgs sdgsdgsdgdsgbfjabknjhfassdgsdgs sdgsdgsdgdsgbfjabknjhfassdgsdgs sdgsdgsdgdsgbfjabknjhfassdgsdgs sdgsdgsdgdsgbfjabkn jhfassdgsdgs sdgsdgsdgdsgbfjabknjhfassdgsdgs sdgsdgsdgdsgbfjabknbasfssdgdsggds afgaasfasfa asfasfaffsafsffs asfasfasfasfas fasfasfa asfasf af asf asfknbaskbnasfknb kajhfbkjbasfkbjasfkbjsfakbj aksbfkjbasf ajsbfhjasbfnabsfnbaskfbaskf akjsbfkjabsfkasfkjbasfkjbasf asfbaskbfkakas faskjfaskbfkbasfkjasf jahbsfbkjasfnbkaskbfaskbkbasf askjfbkajsbfkjbasfk   aksbfkbjasfkbjasfkafsjkbasfjkafsjkasfjkbasfkjbasfkjbasfkjbasfjkbasfkjasfjkfaskjfjbsasajbkfsabjkfbfbjkaskjjkbsfafasjbkasf jkasfkajsfb kajsfkabjsfjkbaskjbasf kjafbkjasfkjbsfakjbsfakbjsafkjbsafkj"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categorieMoviesAndSeriesActivity_arrowBackId"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/color_backgroundcolorOfApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/arrow_back_icon" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

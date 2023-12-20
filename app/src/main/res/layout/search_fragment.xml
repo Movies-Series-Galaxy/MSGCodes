@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchFragment_searchMSGId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon_searchfragment" />
+
+            <TextView
+                android:textColor="#BEBEBE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Search MSG"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textAi"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#00000000"
+        android:layout_below="@id/searchFragment_searchMSGId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground">
+
+        <LinearLayout
+            android:background="@drawable/entryactivity_custombackground_loginbutton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/autoradiographic"
+                    android:gravity="center"
+                    android:text="MSG AI"
+                    android:textColor="@color/primaryColorOfApp"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Unlock a world of cinematic delights with our MSG AI , your guide to the ultimate movies and series recommendations."
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/autoradiographic"
+                    android:textColor="#BEBEBE"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:lottie_rawRes="@raw/lottie_msg_ai_animation"
+                app:lottie_speed="1.5" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/searchFragment_linearLayoutId"
+        android:layout_below="@id/textAi"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:nextFocusLeft="@id/searchFragment_linearLayoutId"
+            android:background="#BEBEBE"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:text="Explore"
+            android:fontFamily="@font/autoradiographic"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#BEBEBE"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/searchFragment_linearLayoutId"
+        android:id="@+id/searchFragment_recyclerViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
